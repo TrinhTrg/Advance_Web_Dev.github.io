@@ -18,5 +18,8 @@
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.14",
     "vite": "^7.1.7"
+  },
+  "dependencies": {
+    "scrollreveal": "^4.0.9"
   }
 }

@@ -1,40 +1,176 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 
 <head>
-  <title>My Site</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-  <style>
-    body,
-    h1 {
-      font-family: "Raleway", sans-serif
-    }
+  <meta charset="UTF-8" />
+  <meta name="title" content="Trương Tuyết Trinh - Portfolio">
+  <meta name="description" content="Xin chào, tôi là Trương Tuyết Trinh. Một sinh viên yêu thích công nghệ và sáng tạo.">
+  <meta name="keywords" content="portfolio, web developer, student, technology">
+  <meta name="author" content="Trương Tuyết Trinh">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    body,
-    html {
-      height: 100%
-    }
+  <title>Trương Tuyết Trinh - Portfolio</title>
 
-    .bgimg {
-      background-image: url('https://images.unsplash.com/photo-1515256722043-0f2b082ddadc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80');
-      min-height: 100%;
-      background-position: center;
-      background-size: cover;
-    }
-  </style>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
-  <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-    <div class="w3-display-topleft w3-padding-large w3-xlarge">
-      Logo
+<body class="font-sans">
+
+  <!-- banner -->
+  <section class="min-h-screen w-full flex flex-col justify-center items-center bg-[url('/banner.avif')] bg-cover bg-center">
+    <div class="w-full lg:w-[80%] p-12 text-gray-800 text-center bg-white/70 rounded-lg shadow">
+      <h1 class="text-5xl lg:text-6xl font-bold mb-10 grid grid-col-1 lg:gap-5">
+        <span>Xin chào, tôi là <span class="text-pink-500">Trương Tuyết Trinh</span></span>
+        <span class="text-gray-700">Frontend Developer & UI Designer</span>
+      </h1>
+      <a href="#about"
+        class="uppercase border-2 border-pink-400 p-3 hover:bg-pink-400 hover:text-white transition-colors cursor-pointer">
+        <span class="text-xl px-8 py-3 font-light">Khám phá thêm</span>
+      </a>
     </div>
-    <div class="w3-display-middle">
-      <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
+  </section>
+  <!-- ./banner -->
+
+  <!-- about -->
+  <section id="about" class="bg-pink-50 min-h-screen w-full flex flex-col justify-center items-center p-6 lg:p-12 text-gray-700">
+    <div class="w-full lg:w-[60%] text-center">
+      <h2 class="uppercase text-2xl lg:text-5xl font-bold mb-12 text-pink-500">Về Tôi</h2>
+      <div class="grid grid-cols-1 gap-6 lg:grid-cols-3">
+        <div class="flex justify-center items-center">
+          <img class="object-cover max-w-xs rounded-full shadow-lg" src="../src/image/image.jpg" alt="Trương Tuyết Trinh" />
+        </div>
+        <div class="lg:col-span-2 flex justify-center items-center">
+          <div class="p-4 text-center lg:text-start">
+            <p class="text-lg font-light mb-5 leading-relaxed">
+              Tôi là một sinh viên luôn yêu thích việc học hỏi và trải nghiệm trong lĩnh vực công nghệ thông tin.
+              Đam mê của tôi là lập trình, thiết kế website và khám phá công nghệ mới.  
+              Mục tiêu: trở thành một lập trình viên giỏi, có khả năng tạo ra sản phẩm sáng tạo và hữu ích.
+            </p>
+            <a href="mailto:truongtuyettrinh@gmail.com"
+              class="uppercase border-2 border-pink-500 p-3 text-pink-500 hover:bg-pink-500 hover:text-white transition-colors cursor-pointer">
+              <span class="text-xl px-8 py-3 font-normal">Liên hệ với tôi</span>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
+  <!-- ./about -->
+
+  <!-- skills -->
+  <section id="skills" class="bg-white min-h-screen w-full flex flex-col justify-center items-center p-6 lg:p-12 text-gray-800">
+    <div class="w-full lg:w-[70%] text-center">
+      <h2 class="uppercase text-2xl lg:text-5xl font-bold mb-12 text-pink-500">Kỹ Năng</h2>
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 text-lg font-light">
+        <span class="p-4 bg-pink-50 rounded-lg shadow">HTML</span>
+        <span class="p-4 bg-pink-50 rounded-lg shadow">CSS / Tailwind</span>
+        <span class="p-4 bg-pink-50 rounded-lg shadow">JavaScript</span>
+        <span class="p-4 bg-pink-50 rounded-lg shadow">ReactJS</span>
+        <span class="p-4 bg-pink-50 rounded-lg shadow">Node.js</span>
+        <span class="p-4 bg-pink-50 rounded-lg shadow">MySQL</span>
+        <span class="p-4 bg-pink-50 rounded-lg shadow">Git/GitHub</span>
+        <span class="p-4 bg-pink-50 rounded-lg shadow">Figma</span>
+      </div>
+    </div>
+  </section>
+  <!-- ./skills -->
+
+  <!-- projects -->
+  <section id="projects" class="bg-pink-50 min-h-screen w-full flex flex-col justify-center items-center p-6 lg:p-12 text-gray-800">
+    <div class="w-full lg:w-[70%] text-center">
+      <h2 class="uppercase text-2xl lg:text-5xl font-bold mb-12 text-pink-500">Dự Án</h2>
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+        <div class="p-6 bg-white rounded-xl shadow hover:scale-105 transition">
+          <h3 class="text-xl font-semibold text-pink-500 mb-3">Recruiting Tutors Website</h3>
+          <p class="mb-4 text-gray-600">Website kết nối phụ huynh, học sinh và gia sư. Admin duyệt và quản lý tin đăng.</p>
+          <p class="text-sm text-gray-500 mb-2">Tech: HTML, CSS, JavaScript, Node.js</p>
+          <div class="flex gap-4 justify-center">
+            <a href="https://github.com/" target="_blank" class="text-pink-400 hover:text-pink-600">GitHub</a>
+          </div>
+        </div>
+
+        <div class="p-6 bg-white rounded-xl shadow hover:scale-105 transition">
+          <h3 class="text-xl font-semibold text-pink-500 mb-3">Cinema Management System</h3>
+          <p class="mb-4 text-gray-600">Ứng dụng quản lý rạp chiếu phim: đặt vé, quản lý nhân viên và khách hàng.</p>
+          <p class="text-sm text-gray-500 mb-2">Tech: Java, Swing, MySQL</p>
+          <div class="flex gap-4 justify-center">
+            <a href="https://github.com/" target="_blank" class="text-pink-400 hover:text-pink-600">GitHub</a>
+          </div>
+        </div>
+
+        <div class="p-6 bg-white rounded-xl shadow hover:scale-105 transition">
+          <h3 class="text-xl font-semibold text-pink-500 mb-3">Portfolio Website</h3>
+          <p class="mb-4 text-gray-600">Trang web cá nhân giới thiệu bản thân, kỹ năng và dự án.</p>
+          <p class="text-sm text-gray-500 mb-2">Tech: HTML, TailwindCSS, JavaScript</p>
+          <div class="flex gap-4 justify-center">
+            <a href="https://github.com/" target="_blank" class="text-pink-400 hover:text-pink-600">GitHub</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- ./projects -->
+
+  <!-- education -->
+  <section id="education" class="bg-white min-h-[400px] w-full flex flex-col justify-center items-center p-6 lg:p-12 text-gray-800">
+    <div class="w-full lg:w-[60%] text-center">
+      <h2 class="uppercase text-2xl lg:text-5xl font-bold mb-12 text-pink-500">Học Vấn</h2>
+      <ul class="space-y-6">
+        <li class="text-lg">
+          <span class="font-semibold text-pink-500">Đại học Đà Nẵng - Viện Nghiên cứu & Đào tạo</span><br/>
+          <span class="text-gray-600">Công nghệ Thông tin (2019 - 2025)</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- ./education -->
+
+  <!-- resume -->
+  <section id="resume" class="bg-pink-50 min-h-[300px] w-full flex flex-col justify-center items-center p-6 lg:p-12 text-gray-800">
+    <div class="w-full lg:w-[60%] text-center">
+      <h2 class="uppercase text-2xl lg:text-5xl font-bold mb-12 text-pink-500">Resume</h2>
+      <a href="./resume.pdf" download
+        class="border-2 border-pink-500 p-3 text-pink-500 hover:bg-pink-500 hover:text-white transition-colors cursor-pointer">
+        <span class="text-xl uppercase font-light">Tải Resume</span>
+      </a>
+    </div>
+  </section>
+  <!-- ./resume -->
+
+  <!-- contact -->
+  <section id="contact" class="bg-white min-h-[400px] w-full flex flex-col justify-center items-center p-6 lg:p-12 text-gray-800">
+    <div class="w-full lg:w-[60%] text-center">
+      <h2 class="uppercase text-2xl lg:text-5xl font-bold mb-6 text-pink-500">Liên Hệ</h2>
+      <p class="pt-5 pb-5 text-center">
+        <span class="text-2xl text-pink-400 mb-3 block">Tôi rất mong được kết nối cùng bạn</span>
+        <span>Hãy trao đổi và cùng nhau tạo ra những dự án đầy cảm hứng</span>
+      </p>
+      <a href="mailto:truongtuyettrinh@gmail.com?subject=Hi Trinh, tôi muốn hợp tác với bạn!"
+        class="border-2 border-pink-400 px-8 py-3 bg-pink-400 text-white hover:bg-white hover:text-pink-500 transition-colors cursor-pointer">
+        <span class="text-xl uppercase font-light">Gửi Email Ngay</span>
+      </a>
+    </div>
+  </section>
+  <!-- ./contact -->
+
+  <!-- footer -->
+  <footer class="bg-neutral-900 min-h-[200px] pt-6 pb-6 flex flex-row justify-center items-center">
+    <div class="w-[60%] flex flex-col justify-center items-center">
+      <p class="text-lg text-gray-500 mb-3">©2025 - Thiết kế bởi Trương Tuyết Trinh</p>
+      <ul class="flex flex-row">
+        <li class="px-4 cursor-pointer hover:-translate-y-2">
+          <a href="https://github.com/" target="_blank" class="text-gray-400 hover:text-white">Github</a>
+        </li>
+        <li class="px-4 cursor-pointer hover:-translate-y-2">
+          <a href="https://www.linkedin.com/" target="_blank" class="text-gray-400 hover:text-white">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <!-- ./footer -->
+
+  <script type="module" src="./scripts/application.js"></script>
 </body>
 </html>
