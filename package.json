@@ -10,7 +10,6 @@
     "build": "vite build",
     "preview": "vite preview"
   },
-
   "author": "",
   "license": "ISC",
   "devDependencies": {
