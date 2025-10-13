@@ -36,9 +36,9 @@
 <body class="font-sans">
 
   <!-- banner -->
-  <section class="min-h-screen w-full flex flex-col justify-center items-center bg-[url('/banner.avif')] bg-cover bg-center">
+  <section class="min-h-screen w-full flex flex-col justify-center items-center bg-[url('./assets/images/banner.avif')] bg-cover bg-center">
     <div class="w-full lg:w-[80%] p-12 text-gray-800 text-center bg-white/70 rounded-lg shadow">
-      <h1 class="text-5xl lg:text-6xl font-bold mb-10 grid grid-col-1 lg:gap-5">
+      <h1 class="text-5xl lg:text-6xl font-bold mb-10 grid grid-cols-1 lg:gap-5">
         <span>Xin chào, tôi là <span class="text-pink-500">Trương Tuyết Trinh</span></span>
         <span class="text-gray-700">Frontend Developer & UI Designer</span>
       </h1>
@@ -48,7 +48,6 @@
       </a>
     </div>
   </section>
-  <!-- ./banner -->
 
   <!-- about -->
   <section id="about" class="bg-pink-50 min-h-screen w-full flex flex-col justify-center items-center p-6 lg:p-12 text-gray-700">
@@ -74,7 +73,6 @@
       </div>
     </div>
   </section>
-  <!-- ./about -->
 
   <!-- skills -->
   <section id="skills" class="bg-white min-h-screen w-full flex flex-col justify-center items-center p-6 lg:p-12 text-gray-800">
@@ -92,48 +90,52 @@
       </div>
     </div>
   </section>
-  <!-- ./skills -->
 
   <!-- projects -->
   <section id="projects" class="bg-pink-50 min-h-screen w-full flex flex-col justify-center items-center p-6 lg:p-12 text-gray-800">
     <div class="w-full lg:w-[70%] text-center">
       <h2 class="uppercase text-2xl lg:text-5xl font-bold mb-12 text-pink-500">Dự Án</h2>
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+        <!-- project 1 -->
         <div class="p-6 bg-white rounded-xl shadow hover:scale-105 transition">
           <h3 class="text-xl font-semibold text-pink-500 mb-3">Recruiting Tutors Website</h3>
           <p class="mb-4 text-gray-600">Website kết nối phụ huynh, học sinh và gia sư. Admin duyệt và quản lý tin đăng.</p>
           <p class="text-sm text-gray-500 mb-2">Tech: HTML, CSS, JavaScript, Node.js</p>
           <div class="flex gap-4 justify-center">
-            <a href="https://github.com/" target="_blank" class="text-gray-400 hover:text-white">
-            <img src="assets/images/github.svg" alt="GitHub" class="w-6 h-6 inline" />
+            <a href="https://github.com/" target="_blank" class="text-gray-500 hover:text-pink-400">
+              <img src="assets/images/github.svg" alt="GitHub" class="w-6 h-6 inline" />
             </a>
           </div>
         </div>
 
+        <!-- project 2 -->
         <div class="p-6 bg-white rounded-xl shadow hover:scale-105 transition">
           <h3 class="text-xl font-semibold text-pink-500 mb-3">Cinema Management System</h3>
           <p class="mb-4 text-gray-600">Ứng dụng quản lý rạp chiếu phim: đặt vé, quản lý nhân viên và khách hàng.</p>
           <p class="text-sm text-gray-500 mb-2">Tech: Java, Swing, MySQL</p>
           <div class="flex gap-4 justify-center">
-            <a href="https://github.com/" target="_blank" class="text-gray-400 hover:text-white">
-            <img src="assets/images/github.svg" alt="GitHub" class="w-6 h-6 inline" />
+            <a href="https://github.com/" target="_blank" class="text-gray-500 hover:text-pink-400">
+              <img src="assets/images/github.svg" alt="GitHub" class="w-6 h-6 inline" />
             </a>
+          </div>
         </div>
 
+        <!-- project 3 -->
         <div class="p-6 bg-white rounded-xl shadow hover:scale-105 transition">
           <h3 class="text-xl font-semibold text-pink-500 mb-3">Portfolio Website</h3>
           <p class="mb-4 text-gray-600">Trang web cá nhân giới thiệu bản thân, kỹ năng và dự án.</p>
           <p class="text-sm text-gray-500 mb-2">Tech: HTML, TailwindCSS, JavaScript</p>
           <div class="flex gap-4 justify-center">
-            <a href="https://github.com/" target="_blank" class="text-gray-400 hover:text-white">
-            <img src="assets/images/github.svg" alt="GitHub" class="w-6 h-6 inline" />
+            <a href="https://github.com/" target="_blank" class="text-gray-500 hover:text-pink-400">
+              <img src="assets/images/github.svg" alt="GitHub" class="w-6 h-6 inline" />
             </a>
           </div>
         </div>
+
       </div>
     </div>
   </section>
-  <!-- ./projects -->
 
   <!-- education -->
   <section id="education" class="bg-white min-h-[400px] w-full flex flex-col justify-center items-center p-6 lg:p-12 text-gray-800">
@@ -147,7 +149,6 @@
       </ul>
     </div>
   </section>
-  <!-- ./education -->
 
   <!-- resume -->
   <section id="resume" class="bg-pink-50 min-h-[300px] w-full flex flex-col justify-center items-center p-6 lg:p-12 text-gray-800">
@@ -159,7 +160,6 @@
       </a>
     </div>
   </section>
-  <!-- ./resume -->
 
   <!-- contact -->
   <section id="contact" class="bg-white min-h-[400px] w-full flex flex-col justify-center items-center p-6 lg:p-12 text-gray-800">
@@ -175,7 +175,6 @@
       </a>
     </div>
   </section>
-  <!-- ./contact -->
 
   <!-- footer -->
   <footer class="bg-neutral-900 min-h-[200px] pt-6 pb-6 flex flex-row justify-center items-center">
@@ -183,19 +182,18 @@
       <p class="text-lg text-gray-500 mb-3">©2025 - Thiết kế bởi Trương Tuyết Trinh</p>
       <ul class="flex flex-row">
         <li class="px-4 cursor-pointer hover:-translate-y-2">
-          <a href="https://github.com/" target="_blank" class="text-gray-400 hover:text-white">
+          <a href="https://github.com/" target="_blank" class="text-gray-400 hover:text-pink-400">
             <img src="assets/images/github.svg" alt="GitHub" class="w-6 h-6 inline" />
           </a>
         </li>
         <li class="px-4 cursor-pointer hover:-translate-y-2">
-          <a href="https://www.linkedin.com/" target="_blank" class="text-gray-400 hover:text-white">
+          <a href="https://www.linkedin.com/" target="_blank" class="text-gray-400 hover:text-pink-400">
             <img src="assets/images/linkedin.svg" alt="LinkedIn" class="w-6 h-6 inline" />
           </a>
         </li>
       </ul>
     </div>
   </footer>
-  <!-- ./footer -->
 
   <script type="module" src="./src/scripts/application.js"></script>
 </body>
